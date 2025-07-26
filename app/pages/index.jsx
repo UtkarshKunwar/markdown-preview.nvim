@@ -9,6 +9,7 @@ import footnote from 'markdown-it-footnote'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItToc from 'markdown-it-toc-done-right'
 import markdownDeflist from 'markdown-it-deflist'
+import { alertPlugin } from 'markdown-it-github-alert'
 
 import mk from './katex'
 import chart from './chart'
@@ -217,6 +218,7 @@ export default class PreviewPage extends React.Component {
         .use(footnote)
         .use(image)
         .use(markdownImSize)
+        .use(alertPlugin)
         .use(linenumbers)
         .use(mkitMermaid)
         .use(chart.chartPlugin)
@@ -334,6 +336,7 @@ export default class PreviewPage extends React.Component {
           <link rel="shortcut icon" type="image/ico" href="/_static/favicon.ico" />
           <link rel="stylesheet" href="/_static/page.css" />
           <link rel="stylesheet" href="/_static/markdown.css" />
+          <link rel="stylesheet" href="/_static/admonition.css" />
           <link rel="stylesheet" href="/_static/highlight.css" />
           <link rel="stylesheet" href="/_static/katex@0.15.3.css" />
           <link rel="stylesheet" href="/_static/sequence-diagram-min.css" />

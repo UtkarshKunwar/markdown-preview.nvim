@@ -210,3 +210,20 @@ erDiagram
     ORDER ||--|{ LINE-ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
+
+### admonitions
+
+> [!NOTE]
+> note
+
+> [!WARNING]
+> warning
+
+> [!TIP]
+> tip
+
+> [!IMPORTANT]
+> important
+
+> [!CAUTION]
+> caution
